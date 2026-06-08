@@ -1,0 +1,72 @@
+name: umsl_veteran_center
+description: "UMSL Veterans Center — checklist, resources, and BAH calculator for student veterans."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management
+  flutter_riverpod: ^2.5.1
+
+  # Secure on-device storage — uses iOS/macOS Keychain, Android EncryptedSharedPreferences
+  # All PII and FERPA-protected data lives here, never in plain shared_preferences
+  flutter_secure_storage: ^9.2.2
+
+  # Routing — declarative, go_router handles the onboarding guard
+  go_router: ^14.2.0
+
+  # Date formatting
+  intl: ^0.19.0
+
+  # Open external links in the default browser (resources page, checklist modules)
+  url_launcher: ^6.3.0
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
+
+  # iOS-style icons used in some UI elements
+  cupertino_icons: ^1.0.8
+
+  # SVG rendering — used for military seals and NDSM medal assets
+  flutter_svg: ^2.0.10+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    # UMSL Veterans Center logo (shown on splash and onboarding header)
+    - assets/images/vetcenter_Logo.png
+    - assets/images/vet_center_lounge.jpg
+    # NDSM ribbon bar SVG (ribbon only, no hand-drawn artwork)
+    - assets/svg/ndsm_ribbon.svg
+    # Official US military branch seals — public domain, works of the federal government
+    # Download each PNG from Wikimedia Commons (see README for exact URLs) and save here:
+    - assets/seals/seal_army.png
+    - assets/seals/seal_navy.png
+    - assets/seals/seal_marines.png
+    # Marines SVG also available for higher-res rendering via flutter_svg
+    - assets/seals/seal_marines.svg
+    - assets/seals/seal_airforce.png
+    - assets/seals/seal_coastguard.png
+    - assets/seals/seal_spaceforce.png
+    # JSON data feeds — edit these to update calendar events and announcements
+    # No app recompile needed — just update the JSON and rebuild
+    - assets/data/calendar.json
+    - assets/data/news.json
+    - assets/data/benefits.json
+    - assets/data/benefit_tasks.json
+    - assets/data/graduation_tasks.json
+    - assets/data/semesters.json
+    - assets/data/contacts.json
+    - assets/data/bah_rates.json
+    - assets/data/campus_map.json
