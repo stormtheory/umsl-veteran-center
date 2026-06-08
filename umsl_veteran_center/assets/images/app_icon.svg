@@ -1,0 +1,73 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <clipPath id="ic">
+      <rect x="0" y="0" width="1024" height="1024"/>
+    </clipPath>
+    <!-- Star polygon for reliable rendering without font dependency -->
+    <polygon id="star"
+      points="0,-18 4.9,-6.7 17.1,-5.6 8.2,2.6 11.1,14.7 0,8.1 -11.1,14.7 -8.2,2.6 -17.1,-5.6 -4.9,-6.7"
+      fill="#F5A800"/>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="1024" height="1024" fill="#C8102E"/>
+
+  <g clip-path="url(#ic)">
+
+    <!-- HANDLE — goes from prongs all the way down to star bar, behind UMSL -->
+    <rect x="476" y="380" width="36" height="372" rx="12" fill="#F5A800"/>
+    <rect x="484" y="380" width="12" height="372" rx="6" fill="#FFD060" opacity="0.45"/>
+
+    <!-- STAR BAR -->
+    <rect x="0" y="750" width="1024" height="274" fill="#8B0000"/>
+    <rect x="0" y="742" width="1024" height="16" fill="#A00020"/>
+
+    <!-- Stars as polygons — no font needed -->
+    <use href="#star" transform="translate(82,860)"/>
+    <use href="#star" transform="translate(185,860)"/>
+    <use href="#star" transform="translate(288,860)"/>
+    <use href="#star" transform="translate(391,860)"/>
+    <use href="#star" transform="translate(494,860)"/>
+    <use href="#star" transform="translate(597,860)"/>
+    <use href="#star" transform="translate(700,860)"/>
+    <use href="#star" transform="translate(803,860)"/>
+    <use href="#star" transform="translate(906,860)"/>
+
+    <!-- VETERANS CENTER -->
+    <text x="512" y="948"
+      font-family="Arial, Helvetica, sans-serif"
+      font-weight="700" font-size="78"
+      fill="#FFFFFF" text-anchor="middle" letter-spacing="4">Veterans Center</text>
+
+    <!-- UMSL — on top of handle -->
+    <text x="512" y="720"
+      font-family="Arial Black, Arial, sans-serif"
+      font-weight="900" font-size="192"
+      fill="#FFFFFF" text-anchor="middle" letter-spacing="4">UMSL</text>
+
+    <!-- COLLAR -->
+    <ellipse cx="494" cy="395" rx="58" ry="26" fill="#F5A800"/>
+    <ellipse cx="494" cy="385" rx="58" ry="26" fill="#8B0000"/>
+    <ellipse cx="494" cy="378" rx="52" ry="23" fill="#F5A800"/>
+    <ellipse cx="494" cy="372" rx="38" ry="16" fill="#FFD060" opacity="0.4"/>
+
+    <!-- CENTER PRONG -->
+    <polygon points="452,385 452,175 494,65 536,175 536,385" fill="#F5A800"/>
+    <polygon points="465,382 465,178 494,80 523,178 523,382" fill="#FFFFFF"/>
+    <polygon points="488,382 488,178 494,80 500,178 500,382" fill="#C8102E" opacity="0.35"/>
+
+    <!-- LEFT PRONG -->
+    <path d="M 452,385 C 444,368 400,335 356,282 C 320,238 312,172 328,120 L 358,144 C 344,188 352,242 384,280 C 420,322 456,360 460,385 Z" fill="#F5A800"/>
+    <path d="M 458,378 C 450,362 408,330 366,279 C 332,237 325,175 340,126 L 358,144 C 345,186 353,240 385,278 C 421,320 455,358 458,378 Z" fill="#FFFFFF"/>
+    <polygon points="328,120 292,138 338,126" fill="#F5A800"/>
+    <polygon points="328,120 308,136 338,126" fill="#FFFFFF"/>
+
+    <!-- RIGHT PRONG -->
+    <path d="M 536,385 C 544,368 588,335 632,282 C 668,238 676,172 660,120 L 630,144 C 644,188 636,242 604,280 C 568,322 532,360 528,385 Z" fill="#F5A800"/>
+    <path d="M 530,378 C 538,362 580,330 622,279 C 656,237 663,175 648,126 L 630,144 C 643,186 635,240 603,278 C 567,320 533,358 530,378 Z" fill="#FFFFFF"/>
+    <polygon points="660,120 696,138 650,126" fill="#F5A800"/>
+    <polygon points="660,120 680,136 650,126" fill="#FFFFFF"/>
+
+  </g>
+</svg>
