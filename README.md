@@ -66,7 +66,7 @@ umsl-veteran-center/
 ## Features
 
 ### Completed
-- Onboarding — email validation, student ID, secure Keychain storage
+- Onboarding — email validation, student ID (not stored), secure Keychain storage
 - Home screen — interactive color-coded calendar and announcements feed
 - Semester checklist — full enrollment system with 6 benefit programs, degree levels, summer sub-terms, graduation tasks, custom tasks, and read-only locking
 - BAH/MHA calculator — Ch. 33, Ch. 30, Ch. 35, Ch. 1606, Ch. 31, Missouri Returning Heroes. Summer session complexity built in.
@@ -251,7 +251,7 @@ Pre-exported PNG sizes live in the `AppIcons/` and `AppIcons_macOS/` folders (no
 - Bundle ID: `edu.umsl.veteranscenter`
 - Category: Education
 - Age rating: 4+
-- Privacy policy required (collects name, email, student ID on-device)
+- Privacy policy required (collects name and email on-device )
 
 ### Google Play Store
 - Package name: `edu.umsl.veteranscenter`
